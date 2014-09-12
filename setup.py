@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 import os
 
-version = '0.1.3'
+version = '0.1.4'
 
 setup(name='plonetheme.intkModern',
     version=version,
@@ -15,7 +15,7 @@ setup(name='plonetheme.intkModern',
     author='Andre Goncalves',
     author_email='andre@intk.com',
     url='https://github.com/intk/plonetheme.intkModern',
-    download_url='https://github.com/intk/plonetheme.intkModern/tarball/0.1.3',
+    download_url='https://github.com/intk/plonetheme.intkModern/tarball/0.1.4',
     license='GPL',
     packages=find_packages(exclude=['ez_setup']),
     namespace_packages=['plonetheme'],
