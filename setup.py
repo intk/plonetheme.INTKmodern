@@ -23,6 +23,7 @@ setup(name='plonetheme.intkModern',
     zip_safe=False,
     install_requires=[
         'setuptools',
+	'plone.app.theming',
     ],
     extras_require={
         "test": ["plone.app.testing"]
