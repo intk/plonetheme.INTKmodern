@@ -57,3 +57,13 @@ dl.actionMenu a {
     #content a:link { color: &dtml-linkColor;; }
 </dtml-with>
 */
+
+#portal-logo {
+    width: 60px;
+    height: 60px;
+}
+
+#portal-logo img {
+    width: 60px;
+    height: 60px;
+}
