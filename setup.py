@@ -3,7 +3,7 @@ import os
 
 version = '0.0.1'
 
-setup(name='plonetheme.intkModern',
+setup(name='plonetheme.INTKmodern',
     version=version,
     description="An installable Diazo theme for Plone 4",
     long_description=open("README.txt").read() + "\n" +
