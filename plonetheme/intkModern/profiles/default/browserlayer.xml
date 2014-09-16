@@ -3,5 +3,5 @@
     <layer 
         name="plonetheme.intkModern" 
         interface="plonetheme.intkModern.browser.interfaces.IThemeSpecific" 
-    />
+    /> 
 </layers>

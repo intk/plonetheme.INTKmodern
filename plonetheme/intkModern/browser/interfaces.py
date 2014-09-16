@@ -8,7 +8,7 @@ class IMediaTypes(Interface):
     Marks all Media types from Products.media*
     """
 
-class IThemeSpecific(IDefaultPloneLayer):
+class IThemeSpecific(Interface):
     """Marker interface that defines a Zope 3 browser layer.
     """
     

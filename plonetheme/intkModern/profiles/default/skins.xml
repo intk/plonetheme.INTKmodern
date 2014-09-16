@@ -4,6 +4,7 @@
          directory="plonetheme.intkModern:skins/diazo_sunburst" />
   <skin-path name="intkModern">
     <layer name="custom"/>
+    <layer name="plonetheme.intkModern"/>
     <layer name="diazo_sunburst"/>
     <layer name="querywidget"/>
     <layer name="referencebrowser"/>

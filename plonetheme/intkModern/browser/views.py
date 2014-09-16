@@ -1,9 +1,10 @@
 from Products.Five import BrowserView
 from plone.app.layout.viewlets.content import DocumentBylineViewlet
+from plone.app.layout.viewlets.common import ViewletBase
 from plone.app.layout.viewlets.common import FooterViewlet
 from AccessControl import getSecurityManager
 
-class SlideshowView(BrowserView):
+class SlideshowView(ViewletBase):
     def slideshow(self, parent):
         print "get slideshow html"
         """

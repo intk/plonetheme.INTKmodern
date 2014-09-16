@@ -1,16 +1,10 @@
 <configure
     xmlns="http://namespaces.zope.org/zope"
     xmlns:browser="http://namespaces.zope.org/browser"
-    xmlns:plone="http://namespaces.plone.org/plone">
+    xmlns:plone="http://namespaces.plone.org/plone"
+    i18n_domain="plonetheme.intkModern">
 
-    <interface name="plonetheme.intkModern"
-        interface=".interfaces.IThemeSpecific"
-        type="zope.publisher.interfaces.browser.IBrowserSkinType"
-        />
-
-    <browser:jbot directory="overrides" />
-
-    <browser:page
+    <!-- <browser:page
       for="*"
       name="get_media_show_item"
       class=".mediaShow.GetMediaShowItemView"
@@ -26,15 +20,17 @@
       template="templates/get_number_of_results.pt"
       layer=".interfaces.IThemeSpecific"
       permission="zope2.View"
-    />
+    /> -->
 
     <browser:viewlet
       name="plonetheme.intkModern.slideshowViewlet"
-      manager="plone.app.layout.viewlets.interfaces.IBelowContentTitle"
+      manager="plone.app.layout.viewlets.interfaces.IAboveContentBody"
+      layer=".interfaces.IThemeSpecific"
       class=".views.SlideshowView"
       template="templates/slideshow.pt"
-      layer=".interfaces.IThemeSpecific"
       permission="zope2.View"
     />
+
+    <browser:jbot directory="overrides" />
 
 </configure>

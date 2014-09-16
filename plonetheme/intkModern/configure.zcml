@@ -15,12 +15,14 @@
       		provides="Products.GenericSetup.interfaces.EXTENSION"
       	/>
 
-	<plone:static
-		directory="theme" type="theme" />
-
   <!-- Include browser foder -->
   <five:registerPackage package="." initialize=".initialize" />
   <include package=".browser" />
+
+  
+	<plone:static
+		directory="theme" type="theme" />
+  
 
 	<cmf:registerDirectory name="skins" directory="skins" recursive="True" />  
 </configure>
