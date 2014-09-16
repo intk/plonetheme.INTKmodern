@@ -31,6 +31,4 @@
       permission="zope2.View"
     />
 
-    <browser:jbot directory="overrides" />
-
 </configure>
