@@ -4,3 +4,4 @@
 dist
 build
 .pypirc
+.DS_Store
