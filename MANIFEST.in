@@ -13,3 +13,4 @@ recursive-include plonetheme *.pyc
 recursive-include plonetheme *.svg
 recursive-include plonetheme *.xml
 recursive-include plonetheme *.zcml
+recursive-include plonetheme *.pt
