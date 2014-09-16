@@ -1,0 +1,7 @@
+<div class="slideshowContent"
+    id="slideshow"
+    i18n:domain="plone"
+    tal:condition="view/show">
+
+    <span>Slideshow</span>
+</div>

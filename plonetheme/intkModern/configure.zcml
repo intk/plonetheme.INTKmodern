@@ -1,6 +1,7 @@
 <configure
   xmlns="http://namespaces.zope.org/zope"
   xmlns:five="http://namespaces.zope.org/five"
+  xmlns:browser="http://namespaces.zope.org/browser"
   xmlns:plone="http://namespaces.plone.org/plone"
   xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
   i18n_domain="plonetheme.intkModern"
@@ -17,18 +18,9 @@
 	<plone:static
 		directory="theme" type="theme" />
 
-  <class class="Products.mediaPage.content.mediapage.MediaPage">
-    <implements interface=".interfaces.IMediaTypes" />
-  </class>
-  
-  <class class="Products.mediaEvent.content.mediaevent.MediaEvent">
-    <implements interface=".interfaces.IMediaTypes" />
-  </class>
+  <!-- Include browser foder -->
+  <five:registerPackage package="." initialize=".initialize" />
+  <include package=".browser" />
 
-  <subscriber
-        for="plonetheme.intkModern.interfaces.IMediaTypes
-        Products.Archetypes.interfaces.IObjectInitializedEvent"
-        handler=".events.mediaObjectAdded" />
-	
 	<cmf:registerDirectory name="skins" directory="skins" recursive="True" />  
 </configure>
