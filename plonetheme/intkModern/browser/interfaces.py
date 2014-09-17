@@ -3,6 +3,11 @@ from plone.theme.interfaces import IDefaultPloneLayer
 from zope.viewlet.interfaces import IViewletManager
 from zope import schema
 
+"""
+Base interfaces for further development and to adapt and extend theme
+for particular websites
+"""
+
 class IMediaTypes(Interface):
     """
     Marks all Media types from Products.media*

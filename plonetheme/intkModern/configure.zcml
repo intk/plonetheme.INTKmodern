@@ -15,11 +15,10 @@
       		provides="Products.GenericSetup.interfaces.EXTENSION"
       	/>
 
-  <!-- Include browser foder -->
+  <!-- Include browser folder -->
   <five:registerPackage package="." initialize=".initialize" />
   <include package=".browser" />
 
-  
 	<plone:static
 		directory="theme" type="theme" />
   
