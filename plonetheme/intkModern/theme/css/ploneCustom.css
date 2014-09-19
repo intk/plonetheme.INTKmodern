@@ -68,4 +68,38 @@ dl.actionMenu a {
     height: 60px;
 }
 
+.tileItem
+{
+    margin-bottom: 20px;
+}
+
+.tileItem .summary
+{
+    margin-bottom: 20px;
+    border-bottom: 1px dotted silver;
+    width: 100%;
+}
+
+#content div.tileItem h2.summary a
+{
+    border-bottom: medium none !important;
+}
+
+#content div.tileItem h2.summary a:hover
+{
+    border-bottom: 1px solid silver !important;
+}
+
+.tileItem .tileMedia
+{
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.tileItem .tileMedia img
+{
+    height:175px;
+    width: auto;
+}
 
