@@ -9,6 +9,8 @@
     <element value="folder_listing"/>
     <element value="standard_view"/>
     <element value="all_content"/>
+    <element value="tabular_view"/>
+    <element value="thumbnail_view"/>
  </property> 
     
 </object>
