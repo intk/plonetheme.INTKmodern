@@ -7,6 +7,11 @@ This is theme for Plone 4 implemented with Diazo
 Changelog
 =========
 
+0.7 (2014-09-19)
+-------------------
+
+- adds folder_listing view to collections
+
 0.6 (2014-09-18)
 -------------------
 
