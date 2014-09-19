@@ -7,6 +7,11 @@ This is theme for Plone 4 implemented with Diazo
 Changelog
 =========
 
+0.8 (2014-09-19)
+-------------------
+
+- adds drag and drop feature to folderish pages
+
 0.7 (2014-09-19)
 -------------------
 
