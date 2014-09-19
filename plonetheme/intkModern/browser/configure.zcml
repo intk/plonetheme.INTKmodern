@@ -19,7 +19,7 @@
 
     <!-- Pages -->
     <browser:page
-        name="collection_custom"
+        name="folder_listing"
         for="plone.app.collection.interfaces.ICollection"
         class=".views.FolderListing"
         template="templates/collection_custom.pt"
