@@ -7,6 +7,11 @@ This is theme for Plone 4 implemented with Diazo
 Changelog
 =========
 
+0.9 (2014-09-20)
+-------------------
+
+- css and javascript dependencies updated and collection form fixed.
+
 0.8 (2014-09-19)
 -------------------
 

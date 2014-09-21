@@ -2,12 +2,12 @@
      i18n:domain="plone"
      id="portal-footer">
      
-     <div class="footerStaticContent">
+    <div class="footerStaticContent">
      
-     </div>
+    </div>
 
-     <div id="FooterPortletManager">
-        <tal:block replace="structure provider:plonetheme.intkBase.footerPortletManager" />
+    <div id="FooterPortletManager">
+        <tal:block replace="structure provider:plonetheme.intkModern.footerPortletManager" />
     </div>
     
     <div class="row"> 

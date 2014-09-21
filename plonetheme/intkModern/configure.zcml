@@ -8,6 +8,10 @@
   i18n_domain="plonetheme.intkModern"
   xmlns:cmf="http://namespaces.zope.org/cmf">
 
+  <!-- Include browser folder -->
+  <five:registerPackage package="." initialize=".initialize" />
+  <include package=".browser" />
+
   	<genericsetup:registerProfile
       		name="default"
       		title="intkModern"
@@ -16,13 +20,10 @@
       		provides="Products.GenericSetup.interfaces.EXTENSION"
       	/>
 
-  <!-- Include browser folder -->
-  <five:registerPackage package="." initialize=".initialize" />
-  <include package=".browser" />
+  <browser:resourceDirectory
+        directory="static" name="plonetheme.intkModern" />
 
 	<plone:static
 		directory="theme" type="theme" />
-  
-
-	<cmf:registerDirectory name="skins" directory="skins" recursive="True" />  
+    
 </configure>

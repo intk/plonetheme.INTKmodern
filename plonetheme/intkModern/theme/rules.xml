@@ -4,8 +4,14 @@
 
     <theme href="index.html" css:if-content="#visual-portal-wrapper" />
 
-    <replace css:theme="html head title" css:content="html head title" />
-    <replace css:theme="html head base" css:content="html head base" />
+    <before content="/html/head" theme="/html/head" />
+
+    <notheme if-path="presentation_view"/>
+    <notheme if-path="source_editor.htm"/>
+    <notheme if-path="ploneimage.htm"/>
+    <notheme if-path="anchor.htm"/>
+    <notheme if-path="table.htm"/>
+    <notheme if-path="attributes.htm"/>
 
     <replace css:content="#portal-colophon" css:theme="#portal-colophon" /> 
     <replace css:content="#portal-column-content" css:theme="#portal-column-content" /> 
