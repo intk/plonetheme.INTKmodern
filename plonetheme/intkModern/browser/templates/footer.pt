@@ -13,7 +13,7 @@
     <div class="row"> 
                 <a class="managePortletsFallback"
                     tal:define="portal context/@@plone_portal_state/portal;"
-                    tal:attributes="href string:${portal/absolute_url}/@@manage-footer">
+                    tal:attributes="href string:${portal/absolute_url}/@@manage-portal-footer">
                     Manage portlets
                </a>
      </div>
