@@ -2,7 +2,7 @@
     xmlns="http://namespaces.plone.org/diazo"
     xmlns:css="http://namespaces.plone.org/diazo/css">
 
-    <theme href="index.html" css:if-content="#visual-portal-wrapper" />
+    <theme href="index.html" css:if-content="#content" />
 
     <before content="/html/head" theme="/html/head" />
 
@@ -13,6 +13,7 @@
     <notheme if-path="table.htm"/>
     <notheme if-path="attributes.htm"/>
 
+    <replace css:content="#portal-columns" css:theme="#content" /> 
     <replace css:content="#portal-colophon" css:theme="#portal-colophon" /> 
     <replace css:content="#portal-column-content" css:theme="#portal-column-content" /> 
     <replace css:content="#portal-column-one" css:theme="#portal-column-one" /> 

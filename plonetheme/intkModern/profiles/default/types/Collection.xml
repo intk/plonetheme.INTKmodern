@@ -4,9 +4,9 @@
    i18n:domain="plone" xmlns:i18n="http://xml.zope.org/namespaces/i18n">
      
  <property name="content_icon"></property>
- <property name="default_view">folder_listing</property>
+ <property name="default_view">folder_view</property>
  <property name="view_methods">
-    <element value="folder_listing"/>
+    <element value="folder_view"/>
     <element value="standard_view"/>
     <element value="all_content"/>
     <element value="tabular_view"/>
