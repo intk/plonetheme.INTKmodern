@@ -36,7 +36,7 @@
       class="plone.app.portlets.browser.manage.ManageContextualPortlets"
       name="manage-portal-footer"
       template="templates/managefooter.pt"
-      layer=".interfaces.IFooterContent"
+      layer=".interfaces.IFooterSpecific"
       permission="plone.app.portlets.ManagePortlets"
     />
 
