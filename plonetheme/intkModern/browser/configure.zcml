@@ -7,6 +7,8 @@
     xmlns:cmf="http://namespaces.zope.org/cmf"
     i18n_domain="plonetheme.intkModern">
 
+    <include package="plone.app.contentmenu" />
+
     <!-- Viewlets -->
     <browser:viewlet
       name="plonetheme.INTKmodern.footer"
@@ -20,6 +22,8 @@
     <!-- Pages -->
     <browser:page
         name="folder_view"
+        menu="plone_displayviews"
+        title="Folder View"
         for="plone.app.collection.interfaces.ICollection"
         class=".views.FolderListing"
         template="templates/collection_custom.pt"

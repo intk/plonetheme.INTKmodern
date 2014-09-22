@@ -1,13 +1,8 @@
-<div metal:define-macro="portal_footer"
-     i18n:domain="plone"
-     id="portal-footer">
-     
-    <div class="footerStaticContent">
-     
-    </div>
+<div id="customfooter"
+     i18n:domain="plone">
 
-    <div id="FooterPortletManager">
-        <tal:block replace="structure provider:plonetheme.intkModern.footerPortletManager" tal:on-error="nothing"/>
+    <div id="FooterPortlet">
+        <tal:block replace="structure provider:plonetheme.intkModern.footerPortletManager"/>
     </div>
 
     <div> 
