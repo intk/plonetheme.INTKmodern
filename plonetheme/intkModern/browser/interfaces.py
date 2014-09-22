@@ -3,6 +3,7 @@ from plone.theme.interfaces import IDefaultPloneLayer
 from zope.viewlet.interfaces import IViewletManager
 from zope import schema
 from plone.portlets.interfaces import IPortletManager
+from plone.app.portlets.interfaces import IColumn
 
 """
 Base interfaces for further development and to adapt and extend theme
@@ -16,6 +17,10 @@ class IMediaTypes(Interface):
 
 class IThemeSpecific(Interface):
     """Marker interface that defines a Zope 3 browser layer.
+    """
+
+class IFooterContent(IColumn):
+    """we need our own portlet manager in the footer area.
     """
 
 class IFooterPortlet(IPortletManager):

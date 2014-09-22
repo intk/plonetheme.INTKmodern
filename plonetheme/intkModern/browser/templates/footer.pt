@@ -1,14 +1,17 @@
 <div metal:define-macro="portal_footer"
      i18n:domain="plone"
-     id="portal-footer">
+     id="portal-footer"
+     class="visualClear">
      
     <div class="footerStaticContent">
      
     </div>
 
     <div id="FooterPortletManager">
-        <tal:block replace="structure provider:plonetheme.intkModern.footerPortletManager" />
+        <tal:block replace="structure provider:plonetheme.intkModern.footerPortletManager" tal:on-error="nothing"/>
     </div>
+    
+    <div class="visualClear" />
     
     <div class="row"> 
                 <a class="managePortletsFallback"
