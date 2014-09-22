@@ -7,6 +7,11 @@ This is theme for Plone 4 implemented with Diazo
 Changelog
 =========
 
+0.11 (2014-09-22)
+-------------------
+
+- fixed footer portlet manager
+
 0.10 (2014-09-22)
 -------------------
 
