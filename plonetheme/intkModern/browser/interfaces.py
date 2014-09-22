@@ -19,15 +19,7 @@ class IThemeSpecific(Interface):
     """Marker interface that defines a Zope 3 browser layer.
     """
 
-class IFooterSpecific(IDefaultPloneLayer):
-    """Marker interface that defines a Zope 3 browser layer.
-    """
-
-class IFooterContent(IColumn):
-    """we need our own portlet manager in the footer area.
-    """
-
-class IFooterPortlet(IPortletManager):
+class IFooterPortlet(IColumn):
     """we need our own portlet manager for the footer.
     """
     

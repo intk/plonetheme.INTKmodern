@@ -2,6 +2,6 @@
 <portlets> 
  <portletmanager 
    name="plonetheme.intkModern.footerPortletManager"
-   type="plonetheme.intkModern.browser.interfaces.IFooterContent"
+   type="plonetheme.intkModern.browser.interfaces.IFooterPortlet"
  />
 </portlets>
