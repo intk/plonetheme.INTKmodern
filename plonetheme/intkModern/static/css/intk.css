@@ -1,13 +1,6 @@
 /* ------------------------------------------------------------------------------
     I N T K - T H E M E
 --------------------------------------------------------------------------------- */
-@font-face {
-  font-family: 'Merriweather-Italic';
-  font-style:  normal;
-  src: url("../fonts/Merriweather/Merriweather-Italic.otf") format('otf');
-}
-
-
 #portal-logo {
     width: 75px;
     height: 75px;
@@ -43,7 +36,7 @@
 .caption {
     padding: 0px !important;
     padding-left: 30px !important;
-    font-family: 'Merriweather-Italic';
+    font-family: 'Merriweather', serif;
 }
 
 .thumbnail h3 {
