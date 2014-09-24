@@ -8,6 +8,7 @@
     i18n_domain="plonetheme.intkModern">
 
     <include package="plone.app.contentmenu" />
+    <include package="z3c.jbot" file="meta.zcml" />
 
     <!-- Viewlets -->
     <browser:viewlet
@@ -20,6 +21,7 @@
     />
 
     <!-- Pages -->
+
     <browser:page
         name="folder_view"
         menu="plone_displayviews"
@@ -43,4 +45,5 @@
       permission="plone.app.portlets.ManagePortlets"
     />
 
+    <browser:jbot directory="overrides" />
 </configure>

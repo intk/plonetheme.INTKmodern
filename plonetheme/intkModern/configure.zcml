@@ -25,5 +25,7 @@
 
 	<plone:static
 		directory="theme" type="theme" />
+
+  <cmf:registerDirectory name="intkModern_custom"/>
     
 </configure>

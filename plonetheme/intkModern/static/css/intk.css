@@ -1,6 +1,12 @@
 /* ------------------------------------------------------------------------------
     I N T K - T H E M E
 --------------------------------------------------------------------------------- */
+@font-face {
+  font-family: 'Merriweather-Italic';
+  font-style:  normal;
+  src: url("../fonts/Merriweather/Merriweather-Italic.otf") format('otf');
+}
+
 
 #portal-logo {
     width: 75px;
@@ -15,3 +21,73 @@
 #FooterPortlet .managePortletsLink {
     display: none;
 }
+
+.folder_contents_portlet_manager .managePortletsLink {
+    display: none;
+}
+
+#content-core {
+    margin-top: 20px;
+}
+
+.thumb-image img {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.thumbnail {
+    border: none !important;
+}
+
+.caption {
+    padding: 0px !important;
+    padding-left: 30px !important;
+    font-family: 'Merriweather-Italic';
+}
+
+.thumbnail h3 {
+    margin-top: 35px !important;
+    text-transform: uppercase;
+    font-family: "Helvetica-bold";
+}
+
+.thumbnail a {
+    text-decoration: none;
+    color: black !important;
+    font-size: 16px;
+}
+
+.thumbnail a:hover {
+    text-decoration: none;
+    color: black !important;
+}
+
+.thumbnail p {
+    font-size: 14px;
+}
+
+/* Override media queries */
+
+@media (min-width: 568px) {
+  .container-fluid {
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container-fluid {
+    padding-left: 100px !important;
+    padding-right: 100px !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .container-fluid {
+    padding-left: 50px !important;
+    padding-right: 50px !important;
+  }
+}
+
+

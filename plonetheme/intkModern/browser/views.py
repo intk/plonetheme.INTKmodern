@@ -167,6 +167,7 @@ class CommonBrowserView(BrowserView):
                 lead = item.absolute_url()
         elif hasattr(item, 'leadMedia'):
             leadUID = item.leadMedia
+            print leadUID
             leadBrain = catalog.queryCatalog({"UID": leadUID})
             if len(leadBrain) != 0:
                 lead = leadBrain[0].getURL()
@@ -174,6 +175,7 @@ class CommonBrowserView(BrowserView):
                 lead = None
         else:
             brains = catalog.queryCatalog({"UID": item.UID()})
+            print brains
             if len(brains) != 0:
                 leadUID = brains[0].leadMedia
                 leadBrain = catalog.queryCatalog({"UID": leadUID})

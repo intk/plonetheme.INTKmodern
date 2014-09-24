@@ -2,6 +2,7 @@
 
 /* import stylesheets and hide from IE/Mac \*/
 @import url("reset.css");
+/*@import url("foundation.css");*/
 @import url("intk.css");
 @import url("enhancements.css"); 
 /* end import/hide */
