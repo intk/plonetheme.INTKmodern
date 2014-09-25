@@ -148,7 +148,7 @@ class CommonBrowserView(BrowserView):
         return isVimeo, vimeoId
     
     def getLeadMediaTag(self, item, scale="large"):
-        print "GET MEDIA TAG"
+        #print "GET MEDIA TAG"
         catalog = getToolByName(self.context, 'portal_catalog')
         if item.portal_type == 'Link':
             isYoutube, youtubeId = self.checkYoutubeLink(item.getRemoteUrl)
@@ -167,7 +167,7 @@ class CommonBrowserView(BrowserView):
                 lead = item.absolute_url()
         elif hasattr(item, 'leadMedia'):
             leadUID = item.leadMedia
-            print leadUID
+            #print leadUID
             leadBrain = catalog.queryCatalog({"UID": leadUID})
             if len(leadBrain) != 0:
                 lead = leadBrain[0].getURL()
@@ -175,7 +175,7 @@ class CommonBrowserView(BrowserView):
                 lead = None
         else:
             brains = catalog.queryCatalog({"UID": item.UID()})
-            print brains
+            #print brains
             if len(brains) != 0:
                 leadUID = brains[0].leadMedia
                 leadBrain = catalog.queryCatalog({"UID": leadUID})
@@ -397,7 +397,7 @@ class FolderListing(CommonBrowserView):
     def results(self, batch=True, b_start = 0, pagesize=10, only_documented=False):
         results = []
         
-        print "FOLDER LISTING"
+        #print "FOLDER LISTING"
         if self.context.portal_type  == 'Collection':
             brains = self.context.queryCatalog(batch=False)
             if only_documented:

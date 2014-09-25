@@ -44,6 +44,4 @@
       template="templates/managefooter.pt"
       permission="plone.app.portlets.ManagePortlets"
     />
-
-    <browser:jbot directory="overrides" />
 </configure>
