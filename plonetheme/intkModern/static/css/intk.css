@@ -100,17 +100,17 @@ body {
   }
 }
 
-@media (min-width: 1200px) {
-  .container-fluid {
-    padding-left: 100px !important;
-    padding-right: 100px !important;
-  }
-}
-
 @media (min-width: 992px) {
   .container-fluid {
     padding-left: 50px !important;
     padding-right: 50px !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container-fluid {
+    padding-left: 100px !important;
+    padding-right: 100px !important;
   }
 }
 
